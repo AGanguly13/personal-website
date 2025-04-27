@@ -49,29 +49,21 @@ export const PROJECTS: Project[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
-    start: '2024',
-    end: 'Present',
+    company: 'Tesla',
+    title: 'Software Engineer Intern',
+    start: 'Apr 2024',
+    end: 'Sep 2024',
     link: 'https://ibelick.com',
     id: 'work1',
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
-    start: '2022',
-    end: '2024',
+    company: 'Capital One',
+    title: 'Software Engineer Intern',
+    start: 'Jun 2023',
+    end: 'Aug 2023',
     link: 'https://ibelick.com',
     id: 'work2',
-  },
-  {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
-    end: 'Present',
-    link: 'https://ibelick.com',
-    id: 'work3',
-  },
+  }
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
