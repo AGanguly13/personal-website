@@ -9,9 +9,11 @@ type Project = {
 type WorkExperience = {
   company: string
   title: string
+  description: string
   start: string
   end: string
   link: string
+  logo: string
   id: string
 }
 
@@ -49,20 +51,34 @@ export const PROJECTS: Project[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
+    company: 'Viam',
+    title: 'Software Engineer Intern',
+    description: 'Computer Vision',
+    start: 'incoming',
+    end: 'summer 2025',
+    link: 'https://viam.com',
+    logo: '/logos/viam_logo.jpg',
+    id: 'work1',
+  },
+  {
     company: 'Tesla',
     title: 'Software Engineer Intern',
+    description: 'Design Automation Software',
     start: 'Apr 2024',
     end: 'Sep 2024',
-    link: 'https://ibelick.com',
-    id: 'work1',
+    link: 'https://tesla.com',
+    logo: '/logos/tesla_logo.jpg',
+    id: 'work2',
   },
   {
     company: 'Capital One',
     title: 'Software Engineer Intern',
+    description: 'Recommender Systems',
     start: 'Jun 2023',
     end: 'Aug 2023',
-    link: 'https://ibelick.com',
-    id: 'work2',
+    link: 'https://capitalone.com',
+    logo: '/logos/capitalone_logo.jpeg',
+    id: 'work3',
   }
 ]
 
