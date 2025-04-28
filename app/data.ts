@@ -67,7 +67,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: 'Apr 2024',
     end: 'Sep 2024',
     link: 'https://tesla.com',
-    logo: '/logos/tesla_logo.jpg',
+    logo: '/logos/tesla_logo.png',
     id: 'work2',
   },
   {
@@ -77,16 +77,16 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: 'Jun 2023',
     end: 'Aug 2023',
     link: 'https://capitalone.com',
-    logo: '/logos/capitalone_logo.jpeg',
+    logo: '/logos/capitalone_logo.png',
     id: 'work3',
   }
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: 'Exploring the Intersection of Design, AI, and Design Engineering',
-    description: 'How AI is changing the way we design',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    title: 'Why a website?',
+    description: 'My view on building',
+    link: '/blog/why-a-website',
     uid: 'blog-1',
   },
   {

@@ -198,10 +198,10 @@ export default function Personal() {
                         <img
                           src={job.logo}
                           alt={`${job.company} logo`}
-                          className="h-6 w-6 object-contain"
+                          className="h-7 w-7 object-contain rounded-md"
                         />
                       )}
-                      <p className="text-zinc-500 dark:text-zinc-400 italic">
+                      <p className="text-zinc-500 dark:text-zinc-400">
                         {job.company}
                       </p>
                     </div>
