@@ -97,8 +97,8 @@ export const SOCIAL_LINKS: SocialLink[] = [
     link: 'https://github.com/AGanguly13',
   },
   {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    label: 'X',
+    link: 'https://x.com/AdwaitGanguly',
   },
   {
     label: 'LinkedIn',
