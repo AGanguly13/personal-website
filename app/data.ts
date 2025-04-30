@@ -85,7 +85,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
 export const BLOG_POSTS: BlogPost[] = [
   {
     title: 'Why a website?',
-    description: 'My view on building',
+    description: 'My thoughts on building',
     link: '/blog/why-a-website',
     uid: 'blog-1',
   }

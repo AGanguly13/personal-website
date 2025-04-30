@@ -126,7 +126,7 @@ function MagneticSocialLink({
 export default function Personal() {
   return (
     <motion.main
-      className="space-y-24"
+      className="space-y-20"
       variants={VARIANTS_CONTAINER}
       initial="hidden"
       animate="visible"
@@ -137,7 +137,9 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            building intuitive and clean software
+            i am a computer science student at northwestern university <br></br>
+            i love building clean and intuitive software, both backend and frontend <br></br>
+            i am interested in the intersection of deeep learning and the physical world
           </p>
         </div>
       </motion.section>
