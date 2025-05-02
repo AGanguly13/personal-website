@@ -139,7 +139,7 @@ export default function Personal() {
           <p className="text-zinc-600 dark:text-zinc-400">
             i am a computer science student at northwestern university <br></br>
             i love building clean and intuitive software, both backend and frontend <br></br>
-            i am interested in the intersection of deeep learning and the physical world
+            i am interested in the intersection of deep learning and the physical world
           </p>
         </div>
       </motion.section>
@@ -149,7 +149,7 @@ export default function Personal() {
         transition={TRANSITION_SECTION}
       >
         <h3 className="mb-5 text-lg font-medium">projects</h3>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <div className="grid auto-rows-fr grid-cols-1 gap-6 sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
               <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">

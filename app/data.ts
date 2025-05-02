@@ -34,18 +34,11 @@ export const PROJECTS: Project[] = [
   {
     name: 'NYC Subway Tracker',
     description:
-      'Open up your phone, tap anywhere on a map of Manhattan, get the closest subway station to that point along with live streamed data about upcoming routes and departure times.',
+      'Open a map of Manhattan, tap anywhere, and get the nearest subway station with live arrival times.',
     link: 'https://github.com/AGanguly13/point72-hackathon',
     image: '/projects/point72_hackathon_image.jpeg',
     id: 'project1',
-  },
-  {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
-    image: '/images/motion-primitives.png',
-    id: 'project2',
-  },
+  }
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
