@@ -88,6 +88,10 @@ export const BLOG_POSTS: BlogPost[] = [
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
+    label: 'Resume',
+    link: '/Adwait_Ganguly_Resume.pdf',
+  },
+  {
     label: 'Github',
     link: 'https://github.com/AGanguly13',
   },
