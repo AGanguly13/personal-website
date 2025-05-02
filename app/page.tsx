@@ -153,7 +153,11 @@ export default function Personal() {
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
               <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
-                <ProjectVideo src={project.video} />
+                <img
+                  src={project.image}
+                  alt={`${project.name} screenshot`}
+                  className="aspect-video w-full rounded-xl object-cover"
+                />
               </div>
               <div className="px-1">
                 <a
@@ -203,9 +207,15 @@ export default function Personal() {
                           className="h-7 w-7 object-contain rounded-md"
                         />
                       )}
-                      <p className="text-zinc-500 dark:text-zinc-400">
-                        {job.company}
-                      </p>
+                      <div className="flex items-center space-x-2">
+                        <p className="text-zinc-500 dark:text-zinc-400">
+                          {job.company}
+                        </p>
+                        <span className="text-zinc-400 dark:text-zinc-500">•</span>
+                        <p className="text-zinc-500 dark:text-zinc-400">
+                          {job.location}
+                        </p>
+                      </div>
                     </div>
                     <p className="text-zinc-400 dark:text-zinc-300">{job.description}</p>
                   </div>

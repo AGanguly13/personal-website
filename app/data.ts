@@ -2,7 +2,7 @@ type Project = {
   name: string
   description: string
   link: string
-  video: string
+  image: string
   id: string
 }
 
@@ -15,6 +15,7 @@ type WorkExperience = {
   link: string
   logo: string
   id: string
+  location: string
 }
 
 type BlogPost = {
@@ -31,20 +32,18 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
-    name: 'Motion Primitives Pro',
+    name: 'NYC Subway Tracker',
     description:
-      'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+      'Open up your phone, tap anywhere on a map of Manhattan, get the closest subway station to that point along with live streamed data about upcoming routes and departure times.',
+    link: 'https://github.com/AGanguly13/point72-hackathon',
+    image: '/projects/point72_hackathon_image.jpeg',
     id: 'project1',
   },
   {
     name: 'Motion Primitives',
     description: 'UI kit to make beautiful, animated interfaces.',
     link: 'https://motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
+    image: '/images/motion-primitives.png',
     id: 'project2',
   },
 ]
@@ -59,6 +58,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: 'https://viam.com',
     logo: '/logos/viam_logo.jpg',
     id: 'work1',
+    location: 'New York, NY'
   },
   {
     company: 'Tesla',
@@ -69,6 +69,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: 'https://tesla.com',
     logo: '/logos/tesla_logo.png',
     id: 'work2',
+    location: 'Palo Alto, CA'
   },
   {
     company: 'Capital One',
@@ -79,6 +80,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     link: 'https://capitalone.com',
     logo: '/logos/capitalone_logo.png',
     id: 'work3',
+    location: 'McLean, VA'
   }
 ]
 
