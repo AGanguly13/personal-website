@@ -10,7 +10,9 @@ import {
   BLOG_POSTS,
   EMAIL,
   SOCIAL_LINKS,
+  PHOTOS,
 } from './data'
+import Image from 'next/image'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -227,6 +229,38 @@ export default function Personal() {
           ))}
         </div>
       </motion.section>
+
+      <section className="mt-24">
+        <div className="flex items-center justify-between mb-8">
+          <h2 className="text-2xl font-bold">Photography</h2>
+          <Link href="/photos" className="text-sm text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200">
+            View all photos →
+          </Link>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {PHOTOS.slice(0, 3).map((photo) => (
+            <motion.div
+              key={photo.id}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="bg-white dark:bg-zinc-800 rounded-lg overflow-hidden shadow-lg"
+            >
+              <div className="relative h-48">
+                <Image
+                  src={photo.image}
+                  alt={photo.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-4">
+                <h3 className="text-lg font-semibold mb-1">{photo.title}</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">{photo.location}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </section>
     </motion.main>
   )
 }

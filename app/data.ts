@@ -30,6 +30,15 @@ type SocialLink = {
   link: string
 }
 
+type Photo = {
+  id: string
+  title: string
+  description: string
+  image: string
+  date: string
+  location: string
+}
+
 export const PROJECTS: Project[] = [
   {
     name: 'NYC Subway Tracker',
@@ -110,3 +119,30 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ]
 
 export const EMAIL = 'ganguly.adwait@gmail.com'
+
+export const PHOTOS: Photo[] = [
+  {
+    id: 'photo1',
+    title: 'Photo 1',
+    description: 'A beautiful capture',
+    image: '/photos/photo_1.jpg',
+    date: '2024-03-15',
+    location: 'Location 1'
+  },
+  {
+    id: 'photo2',
+    title: 'Photo 2',
+    description: 'Another stunning view',
+    image: '/photos/photo_2.jpg',
+    date: '2024-02-20',
+    location: 'Location 2'
+  },
+  {
+    id: 'photo3',
+    title: 'Photo 3',
+    description: 'A memorable moment',
+    image: '/photos/photo_3.jpg',
+    date: '2024-01-10',
+    location: 'Location 3'
+  }
+]
