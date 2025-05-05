@@ -243,20 +243,14 @@ export default function Personal() {
               key={photo.id}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              className="bg-white dark:bg-zinc-800 rounded-lg overflow-hidden shadow-lg"
+              className="aspect-square relative overflow-hidden rounded-lg"
             >
-              <div className="relative h-48">
-                <Image
-                  src={photo.image}
-                  alt={photo.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4">
-                <h3 className="text-lg font-semibold mb-1">{photo.title}</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">{photo.location}</p>
-              </div>
+              <Image
+                src={photo.image}
+                alt=""
+                fill
+                className="object-cover"
+              />
             </motion.div>
           ))}
         </div>

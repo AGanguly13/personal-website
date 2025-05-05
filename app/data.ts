@@ -1,3 +1,6 @@
+import { readdirSync } from 'fs'
+import { join } from 'path'
+
 type Project = {
   name: string
   description: string
@@ -32,11 +35,7 @@ type SocialLink = {
 
 type Photo = {
   id: string
-  title: string
-  description: string
   image: string
-  date: string
-  location: string
 }
 
 export const PROJECTS: Project[] = [
@@ -120,29 +119,11 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 export const EMAIL = 'ganguly.adwait@gmail.com'
 
-export const PHOTOS: Photo[] = [
-  {
-    id: 'photo1',
-    title: 'Photo 1',
-    description: 'A beautiful capture',
-    image: '/photos/photo_1.jpg',
-    date: '2024-03-15',
-    location: 'Location 1'
-  },
-  {
-    id: 'photo2',
-    title: 'Photo 2',
-    description: 'Another stunning view',
-    image: '/photos/photo_2.jpg',
-    date: '2024-02-20',
-    location: 'Location 2'
-  },
-  {
-    id: 'photo3',
-    title: 'Photo 3',
-    description: 'A memorable moment',
-    image: '/photos/photo_3.jpg',
-    date: '2024-01-10',
-    location: 'Location 3'
-  }
-]
+// Generate array of photos from 1 to 100 (adjust the number if you have more photos)
+export const PHOTOS: Photo[] = Array.from({ length: 47 }, (_, i) => ({
+  id: `photo${i + 1}`,
+  image: `/photos/photo_${i + 1}.jpg`
+})).filter(photo => {
+  // This will be handled by Next.js's Image component - it will only load existing images
+  return true
+})

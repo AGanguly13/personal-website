@@ -14,29 +14,23 @@ export default function PhotosPage() {
         Photography
       </motion.h1>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="columns-1 md:columns-2 lg:columns-3 gap-4">
         {PHOTOS.map((photo) => (
           <motion.div
             key={photo.id}
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="bg-white dark:bg-zinc-800 rounded-lg overflow-hidden shadow-lg"
+            className="mb-4 break-inside-avoid"
           >
-            <div className="relative h-64">
+            <div className="relative w-full">
               <Image
                 src={photo.image}
-                alt={photo.title}
-                fill
-                className="object-cover"
+                alt=""
+                width={2000}
+                height={3000}
+                className="w-full h-auto rounded-lg"
+                style={{ objectFit: 'contain' }}
               />
-            </div>
-            <div className="p-4">
-              <h2 className="text-xl font-semibold mb-2">{photo.title}</h2>
-              <p className="text-gray-600 dark:text-gray-300 mb-2">{photo.description}</p>
-              <div className="flex justify-between text-sm text-gray-500 dark:text-gray-400">
-                <span>{photo.date}</span>
-                <span>{photo.location}</span>
-              </div>
             </div>
           </motion.div>
         ))}
