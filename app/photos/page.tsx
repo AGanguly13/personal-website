@@ -27,19 +27,19 @@ export default function PhotosPage() {
             className="mb-2 break-inside-avoid cursor-pointer"
             onClick={() => setSelectedPhoto(photo.image)}
           >
-            <div className="relative w-full">
+            <div className="relative w-full aspect-[3/4]">
               {!loadedImages.has(photo.image) && (
                 <div className="absolute inset-0 bg-zinc-100 dark:bg-zinc-800 animate-pulse rounded-lg" />
               )}
               <Image
                 src={photo.image}
-                alt=""
-                width={2000}
-                height={3000}
-                className={`w-full h-auto rounded-lg transition-opacity duration-300 ${
+                alt={`Photo ${photo.id}`}
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                className={`rounded-lg transition-opacity duration-300 ${
                   loadedImages.has(photo.image) ? 'opacity-100' : 'opacity-0'
                 }`}
-                style={{ objectFit: 'contain' }}
+                style={{ objectFit: 'cover' }}
                 onLoadingComplete={() => handleImageLoad(photo.image)}
                 loading="lazy"
               />
@@ -66,7 +66,7 @@ export default function PhotosPage() {
             >
               <Image
                 src={selectedPhoto}
-                alt=""
+                alt="Full size photo"
                 width={2000}
                 height={3000}
                 className="w-auto h-auto max-h-[90vh] rounded-lg"
@@ -76,6 +76,7 @@ export default function PhotosPage() {
               <button
                 className="absolute top-4 right-4 text-white bg-black/50 rounded-full p-2 hover:bg-black/70 transition-colors"
                 onClick={() => setSelectedPhoto(null)}
+                aria-label="Close modal"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
