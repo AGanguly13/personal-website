@@ -119,11 +119,9 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 export const EMAIL = 'ganguly.adwait@gmail.com'
 
-// Generate array of photos from 1 to 100 (adjust the number if you have more photos)
 export const PHOTOS: Photo[] = Array.from({ length: 47 }, (_, i) => ({
   id: `photo${i + 1}`,
   image: `/photos/photo_${i + 1}.jpg`
 })).filter(photo => {
-  // This will be handled by Next.js's Image component - it will only load existing images
   return true
 })

@@ -231,8 +231,8 @@ export default function Personal() {
       </motion.section>
 
       <section className="mt-24">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl font-bold">Photography</h2>
+        <div className="flex items-center justify-between mb-2">
+          <h3 className="mb-5 text-lg font-medium">photography</h3>
           <Link href="/photos" className="text-sm text-zinc-500 hover:text-zinc-700 dark:text-zinc-400 dark:hover:text-zinc-200">
             View all photos →
           </Link>
