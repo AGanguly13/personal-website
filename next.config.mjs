@@ -1,4 +1,8 @@
 import createMDX from '@next/mdx';
+import { config } from 'dotenv';
+
+// Load environment variables
+config();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
