@@ -1,1 +1,1 @@
-export const WEBSITE_URL = 'https://adwaitganguly.vercel.app'
+export const WEBSITE_URL = 'https://adwaitg.com'
