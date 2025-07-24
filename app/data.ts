@@ -46,6 +46,13 @@ export const PROJECTS: Project[] = [
     link: 'https://github.com/AGanguly13/point72-hackathon',
     image: '/projects/point72_hackathon_image.jpeg',
     id: 'project1',
+  },
+  {
+    name: 'friday',
+    description: 'AI assistant for intellectually curious to reclaim the power of learning and understanding',
+    link: '',
+    image: '/projects/friday_logo.png',
+    id: 'project2'
   }
 ]
 
