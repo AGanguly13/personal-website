@@ -91,6 +91,12 @@ export const BLOG_POSTS: BlogPost[] = [
     description: 'My thoughts on building',
     link: '/blog/why-a-website',
     uid: 'blog-1',
+  },
+  {
+    title: 'Perfection through Imperfection',
+    description: 'An essay on AI',
+    link: '/blog/cs496-reflection',
+    uid: 'blog-2'
   }
 ]
 
