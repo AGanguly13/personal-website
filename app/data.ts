@@ -128,6 +128,10 @@ export const SOCIAL_LINKS: SocialLink[] = [
     label: 'Instagram',
     link: 'https://www.instagram.com/adwaitganguly/',
   },
+  {
+    label: 'Unsplash',
+    link: 'https://unsplash.com/@aganguly'
+  }
 ]
 
 export const EMAIL = 'ganguly.adwait@gmail.com'
