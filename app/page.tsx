@@ -13,6 +13,7 @@ import {
   PHOTOS,
 } from './data'
 import Image from 'next/image'
+import { SpotifyTile } from '@/components/spotify-tile'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -86,6 +87,16 @@ export default function Personal() {
             i love building clean and intuitive software, both backend and frontend <br></br>
             i am interested in the intersection of deep learning and the physical world
           </p>
+        </div>
+      </motion.section>
+
+      <motion.section
+        variants={VARIANTS_SECTION}
+        transition={TRANSITION_SECTION}
+      >
+        <h3 className="mb-3 text-lg font-medium">what im listening to</h3>
+        <div className="max-w-xs">
+          <SpotifyTile />
         </div>
       </motion.section>
 
