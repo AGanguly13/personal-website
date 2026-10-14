@@ -40,23 +40,34 @@ type Photo = {
 
 export const PROJECTS: Project[] = [
   {
+    name: 'friday',
+    description: 'AI tutor that lives on your desktop and helps you keep focus while learning',
+    link: 'https://tryfriday.xyz',
+    image: '/projects/friday_logo_orig.png',
+    id: 'project1'
+  },
+  {
     name: 'NYC Subway Tracker',
     description:
       'Open a map of Manhattan, tap anywhere, and get the nearest subway station with live arrival times.',
     link: 'https://github.com/AGanguly13/point72-hackathon',
     image: '/projects/point72_hackathon_image.jpeg',
-    id: 'project1',
-  },
-  {
-    name: 'friday',
-    description: 'AI assistant for intellectually curious to reclaim the power of learning and understanding',
-    link: '',
-    image: '/projects/friday_logo.png',
-    id: 'project2'
+    id: 'project2',
   }
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
+  {
+    company: 'Applied Intuition',
+    title: 'Software Engineer',
+    description: 'Autonomous Trucks',
+    start: 'Aug 2026',
+    end: 'Present',
+    link: 'https://appliedintuition.com',
+    logo: '/logos/applied_intuition_logo.png',
+    id: 'work4',
+    location: 'Sunnyvale, CA'
+  },
   {
     company: 'Viam',
     title: 'Software Engineer Intern',
@@ -65,7 +76,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: 'Aug 2025',
     link: 'https://viam.com',
     logo: '/logos/viam_logo.jpg',
-    id: 'work1',
+    id: 'work3',
     location: 'New York, NY'
   },
   {
@@ -87,23 +98,23 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: 'Aug 2023',
     link: 'https://capitalone.com',
     logo: '/logos/capitalone_logo.png',
-    id: 'work3',
+    id: 'work1',
     location: 'McLean, VA'
-  }
+  } 
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
-  {
-    title: 'Why a website?',
-    description: 'My thoughts on building',
-    link: '/blog/why-a-website',
-    uid: 'blog-1',
-  },
   {
     title: 'Perfection through Imperfection',
     description: 'An essay on AI',
     link: '/blog/cs496-reflection',
     uid: 'blog-2'
+  },
+  {
+    title: 'Why a website?',
+    description: 'My thoughts on building',
+    link: '/blog/why-a-website',
+    uid: 'blog-1',
   }
 ]
 
