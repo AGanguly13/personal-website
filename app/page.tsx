@@ -108,13 +108,17 @@ export default function Personal() {
         <div className="grid auto-rows-fr grid-cols-1 gap-6 sm:grid-cols-[repeat(auto-fit,minmax(300px,1fr))]">
           {PROJECTS.map((project) => (
             <div key={project.name} className="space-y-2">
-              <div className="relative rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50">
+              <a
+                href={project.link}
+                target="_blank"
+                className="relative block rounded-2xl bg-zinc-50/40 p-1 ring-1 ring-zinc-200/50 ring-inset dark:bg-zinc-950/40 dark:ring-zinc-800/50"
+              >
                 <img
                   src={project.image}
                   alt={`${project.name} screenshot`}
                   className="aspect-video w-full rounded-xl object-cover"
                 />
-              </div>
+              </a>
               <div className="px-1">
                 <a
                   className="font-base group relative inline-block font-[450] text-zinc-900 dark:text-zinc-50"
