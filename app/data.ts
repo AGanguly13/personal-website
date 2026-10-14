@@ -58,6 +58,17 @@ export const PROJECTS: Project[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
+    company: 'Applied Intuition',
+    title: 'Software Engineer',
+    description: 'Autonomous Trucks',
+    start: 'Aug 2026',
+    end: 'Present',
+    link: 'https://appliedintuition.com',
+    logo: '/logos/applied_intuition_logo.png',
+    id: 'work4',
+    location: 'Sunnyvale, CA'
+  },
+  {
     company: 'Viam',
     title: 'Software Engineer Intern',
     description: 'Computer Vision',
@@ -65,7 +76,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: 'Aug 2025',
     link: 'https://viam.com',
     logo: '/logos/viam_logo.jpg',
-    id: 'work1',
+    id: 'work3',
     location: 'New York, NY'
   },
   {
@@ -87,23 +98,23 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     end: 'Aug 2023',
     link: 'https://capitalone.com',
     logo: '/logos/capitalone_logo.png',
-    id: 'work3',
+    id: 'work1',
     location: 'McLean, VA'
-  }
+  } 
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
-  {
-    title: 'Why a website?',
-    description: 'My thoughts on building',
-    link: '/blog/why-a-website',
-    uid: 'blog-1',
-  },
   {
     title: 'Perfection through Imperfection',
     description: 'An essay on AI',
     link: '/blog/cs496-reflection',
     uid: 'blog-2'
+  },
+  {
+    title: 'Why a website?',
+    description: 'My thoughts on building',
+    link: '/blog/why-a-website',
+    uid: 'blog-1',
   }
 ]
 
