@@ -83,9 +83,9 @@ export default function Personal() {
       >
         <div className="flex-1">
           <p className="text-zinc-600 dark:text-zinc-400">
-            i am a computer science student at northwestern university <br></br>
-            i love building clean and intuitive software, both backend and frontend <br></br>
-            i am interested in the intersection of deep learning and the physical world
+            i am an engineer at applied intuition <br></br>
+            i graduated from northwestern university with a bs + ms in computer science and a focus on ml <br></br>
+            i am deeply interested in ml engineering/research for the physical world and low latency systems
           </p>
         </div>
       </motion.section>
